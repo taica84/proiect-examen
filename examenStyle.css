@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    background-image: url('./images/backround-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    max-width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+}
+
+h1{
+    
+    color: white;
+    opacity: .7;
+    font-family: consolas;
+    float: left;
+    margin-left: 100px;
+    line-height: 70px;
+    opacity: .3;
+    font-size: 35px;
+    
+  
+}
+p{
+ 
+    font-family: consolas;
+    font-size: 25px;
+    color: red; 
+}
+
+
+
+
+.content ul{
+    width: 150px;
+    font-family: consolas;
+    list-style: none;
+    background: linear-gradient(black,gray) ;
+    opacity: .8;
+    position: absolute;
+    display: none;
+    margin-left: 20px;
+    
+    
+}
+
+.content a{
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    color: chartreuse;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+.content a:hover{
+    color: red;
+}
+
+.dropdown label{
+    width: 150px;
+    height: 70px;
+    font-family: consolas;
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin-left: 20px;
+    background: url('./images/hamburgerMenu.png') no-repeat left center;
+    
+}
+
+#menu {
+    display: none;
+    
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    
+}
+
+   /* ACCORDION MENU  */
+
+.accordion{
+    
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.accordion div{
+    width:100px;
+    height:250px;
+    box-shadow: red 0 0  40px;
+    
+    background: red;
+    
+    
+}
+.accordion div:nth-child(even){
+    background: green;
+}
+
+#news-1{
+    background: url('./images/stiri1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+#news-2{
+    background: url('./images/stiri2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+#news-3{
+    background: url('./images/stiri3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}  
+#news-4{
+    background: url('./images/stiri4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+#news-5{
+    background: url('./images/stiri5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+
+.accordion h2{
+    font-size: 25px;
+    color: crimson;
+    display: none;
+    
+}
+.collapsible{
+    background: url('./images/breaking\ news.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/* form styling  */
+.form{
+   background: gray;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-family: consolas;
+    color: rgba(9, 57, 129, 0.555);
+    font-size: 50px;
+    margin-top: 5px;
+    
+}
+.wrapper{
+    height: 100%;
+    background: linear-gradient(gray,black);
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding 0 20px;
+    
+    
+}
+.contact-form{
+    font-family: consolas;
+    max-width: 600px;
+    margin:0 auto;
+    margin-top: 50px;
+    background: rgb(249, 250, 250);
+    padding: 30px;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    
+    background: transparent;
+    border: 0;
+    border-bottom: 3px solid black;
+    padding-top: 10px;
+    margin-top: 10px;
+    color: black;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+}
+
+
+
+
+button{
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    font-size: 25px;
+    font-family: consolas;
+    background:linear-gradient(gray,cornsilk);
+    box-shadow: 2px 0 2px black;
+    position: relative;
+    
+    bottom: 45%;
+    right: -75%;
+    outline: none;
+}
+
+
+::placeholder{
+    color: black;
+    opacity: .4;
+    font-family: consolas;
+}
+#validation-error{
+    width: 300px;
+    font-size: 25px;
+    color: red;
+    margin-bottom: 30px;
+
+}
+/* timer */
+
+span{
+    font-size: 150px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    display: none;
+    
+}
+
+/* Gallery styling */
+
+.photos{
+    width: 700px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    right:100%;
+    border-radius: 10px;
+    
+}
+.photos img {
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    
+    left: -100%;
+    top 0;
+}
+
+
+
+
+
+ .slider {
+     width: 700px;
+     height: 400px;
+     position: relative;
+     overflow: hidden;
+     margin: auto;
+     right:100%;
+     border-radius: 10px;
+     
+ }
+
+
+
+
+ .slider img {
+     width: 700px;
+     height: 400px;
+     position: absolute;
+     
+     left: -100%;
+     top 0;
+ }
+ .slider img:first-child{
+     left: 0;
+ }
+
+ .head-gallery{
+    width: 100%;
+    height: 150px;
+    background:linear-gradient(green,black);
+    l
+ 
+    
+ }
+
+ h3{
+     font-size: 100px;
+     color : red;
+     display: flex;
+     justify-content: center;
+     line-height: 1px;
+     font-family: consolas;
+     
+     
+     
+ }
+     
+ h4{
+     
+     display: flex;
+     justify-content: center;
+     font-family: 'Dancing Script';
+     color :blue;
+     font-size: 30px;
+ }
+
+ h4 img{
+     width: 40px;
+     height: 50px;
+     
+     
+ }
+
+ section{
+    background: linear-gradient(black,green);
+    
+    height:500px;
+   
+ }
+ em{
+     display: flex;
+     justify-content: center;
+     font-size: 30px;
+     
+ }

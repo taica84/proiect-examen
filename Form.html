@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen Java Script(form validation)- Avantage Consulting </title>
+    <link rel="stylesheet" href="examenStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Trade+Winds&display=swap" rel="stylesheet">
+    
+</head>
+<body class="form">
+    <header>
+      <h2>CONTACT US</h2>
+    </header>
+    <article>
+      <div class=".container">
+        <div class="wrapper">
+            <div class="contact-form">
+               
+                  <form action="javascript:alert('Your form has been sent');" method="POST" onsubmit="return formValidation()">
+                    <input type="text" placeholder="your name" >
+                    
+                    <input type="password" placeholder="your password" >
+                    
+                    <input type="email" placeholder="e-mail">
+                   
+                    <input type="number" placeholder="phone"  >
+                   
+                    <input type="file" accept=".jpg" >
+                    
+                    
+                    <button id="submit-button" type="submit"  >Submit</button>
+                  </form> 
+                  <div id="validation-error"></div>
+                  
+            </div>
+              
+        </div>
+      </div>
+    </article>
+
+
+   <script src="jquery-3.4.1.min.js"></script>
+   <script src="examenScript.js"></script>
+</body>
+</html>
