@@ -360,5 +360,16 @@ span{
      display: flex;
      justify-content: center;
      font-size: 30px;
-     
  }
+
+/* Media Queries for news */
+ 
+@media(max-width:420px){
+    .accordion div{
+        width: 50px;
+    }
+    .accordion {
+        height: 300px;
+    }
+   
+}
